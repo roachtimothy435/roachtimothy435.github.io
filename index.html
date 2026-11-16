@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>萌翻导航 - 精选网址入口·海量导航大全·一键直达</title>
+<meta name="description" content="萌翻导航是精心整理的网址入口大全，汇集优质站点导航与热门资源推荐，每日更新精选链接。访问快速直达你需要的网站，一站找齐各类入口，省时省心。">
+<meta name="keywords" content="萌翻导航,网址导航,网址入口,导航大全,精选导航,网址直达,上网入口,热门网址,优质站点,导航推荐,一键直达,导航入口">
+<meta name="author" content="萌翻导航">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.mengfandh.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="萌翻导航 - 精选网址入口·海量导航大全·一键直达">
+<meta property="og:description" content="萌翻导航是精心整理的网址入口大全，汇集优质站点导航与热门资源推荐，每日更新精选链接。">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #2b2f38;
+  line-height: 1.7;
+  font-size: 15px;
+}
+a {
+  color: #2b2f38;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #ff7a45;
+}
+.header {
+  background: linear-gradient(135deg, #ffb36b 0%, #ff7a45 55%, #f5543f 100%);
+  color: #fff;
+  padding: 34px 20px 30px;
+  text-align: center;
+}
+.header .wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.site-logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.site-slogan {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 20px;
+}
+.search-box {
+  display: flex;
+  max-width: 620px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(180, 70, 20, 0.18);
+}
+.search-box input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 13px 22px;
+  font-size: 15px;
+  color: #2b2f38;
+  background: transparent;
+}
+.search-box button {
+  border: 0;
+  cursor: pointer;
+  padding: 0 30px;
+  font-size: 15px;
+  color: #fff;
+  background: #ff7a45;
+  font-family: inherit;
+}
+.search-box button:hover {
+  background: #f5543f;
+}
+.nav-bar {
+  background: #fff;
+  border-bottom: 1px solid #eceff5;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.nav-bar .wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 20px;
+}
+.nav-bar a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #4a5160;
+}
+.nav-bar a:hover {
+  background: #fff1e9;
+  color: #f5543f;
+}
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px 10px;
+}
+.hero {
+  background: #fff;
+  border-radius: 14px;
+  padding: 26px 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 12px rgba(30, 50, 90, 0.05);
+}
+.hero h1 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #1f2530;
+}
+.hero p {
+  color: #5b6371;
+  font-size: 14.5px;
+  margin-bottom: 10px;
+}
+.hero p:last-child {
+  margin-bottom: 0;
+}
+.section {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px 28px;
+  margin-bottom: 26px;
+  box-shadow: 0 2px 12px rgba(30, 50, 90, 0.05);
+}
+.section h2 {
+  font-size: 19px;
+  color: #1f2530;
+  padding-left: 12px;
+  border-left: 4px solid #ff7a45;
+  margin-bottom: 6px;
+}
+.section .section-desc {
+  font-size: 13.5px;
+  color: #8a93a3;
+  margin-bottom: 18px;
+  padding-left: 16px;
+}
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fc;
+  border: 1px solid #eef1f7;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.link-item:hover {
+  background: #fff6f1;
+  border-color: #ffd4bf;
+}
+.link-item .name {
+  font-size: 14.5px;
+  color: #2b2f38;
+  font-weight: 600;
+}
+.link-item .tag {
+  font-size: 11.5px;
+  color: #ff7a45;
+  background: #fff0e8;
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.hot-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+.hot-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #f8f9fc;
+  border: 1px solid #eef1f7;
+}
+.hot-list li:hover {
+  background: #fff6f1;
+  border-color: #ffd4bf;
+}
+.hot-list .rank {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: #c3c9d4;
+}
+.hot-list li:nth-child(1) .rank,
+.hot-list li:nth-child(2) .rank,
+.hot-list li:nth-child(3) .rank {
+  background: #ff7a45;
+}
+.article p {
+  color: #5b6371;
+  font-size: 14.5px;
+  margin-bottom: 12px;
+}
+.article p:last-child {
+  margin-bottom: 0;
+}
+.article h3 {
+  font-size: 16px;
+  color: #1f2530;
+  margin: 18px 0 8px;
+}
+.footer {
+  background: #232833;
+  color: #a8b0be;
+  text-align: center;
+  padding: 26px 20px;
+  font-size: 13.5px;
+  line-height: 2;
+}
+.footer a {
+  color: #d3d8e0;
+}
+.footer a:hover {
+  color: #ffb36b;
+}
+.back-top {
+  position: fixed;
+  right: 24px;
+  bottom: 30px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ff7a45;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(255, 122, 69, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+.back-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .section {
+    padding: 20px 16px 22px;
+  }
+  .hero {
+    padding: 20px 18px;
+  }
+  .link-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .search-box button {
+    padding: 0 20px;
+  }
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <a class="site-logo" href="/">萌翻导航</a>
+    <p class="site-slogan">精选网址入口 · 海量导航大全 · 一键直达</p>
+    <form class="search-box" action="https://www.baidu.com/s" method="get" target="_blank">
+      <input type="text" name="wd" placeholder="输入关键词，快速找到你需要的网站" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="wrap">
+    <a href="#hot">热门推荐</a>
+    <a href="#comprehensive">综合导航</a>
+    <a href="#tools">工具效率</a>
+    <a href="#life">生活服务</a>
+    <a href="#study">学习阅读</a>
+    <a href="#entertainment">影音娱乐</a>
+    <a href="#guide">使用指南</a>
+  </div>
+</nav>
+
+<main class="main">
+  <section class="hero">
+    <h1>萌翻导航：一站找齐各类网址入口</h1>
+    <p>萌翻导航是精心整理的网址入口大全，汇集优质站点导航与热门资源推荐，每日更新精选链接。访问快速直达你需要的网站，一站找齐各类入口，省时省心。</p>
+    <p>我们只收录打开速度快、内容稳定、长期可用的站点，按综合、工具、生活、学习、影音等维度分类呈现，让你在一个页面上就能完成从找站到进站的全部动作。</p>
+  </section>
+
+  <section class="section" id="hot">
+    <h2>热门推荐</h2>
+    <p class="section-desc">近期访问量最高的精选网址入口，点击即可直达。</p>
+    <ul class="hot-list">
+      <li><span class="rank">1</span><a href="https://www.baidu.com" target="_blank" rel="noopener">百度搜索</a></li>
+      <li><span class="rank">2</span><a href="https://www.bilibili.com" target="_blank" rel="noopener">哔哩哔哩</a></li>
+      <li><span class="rank">3</span><a href="https://www.zhihu.com" target="_blank" rel="noopener">知乎社区</a></li>
+      <li><span class="rank">4</span><a href="https://www.taobao.com" target="_blank" rel="noopener">淘宝购物</a></li>
+      <li><span class="rank">5</span><a href="https://www.jd.com" target="_blank" rel="noopener">京东商城</a></li>
+      <li><span class="rank">6</span><a href="https://www.douyin.com" target="_blank" rel="noopener">抖音短视频</a></li>
+      <li><span class="rank">7</span><a href="https://weibo.com" target="_blank" rel="noopener">微博热点</a></li>
+      <li><span class="rank">8</span><a href="https://www.163.com" target="_blank" rel="noopener">网易新闻</a></li>
+      <li><span class="rank">9</span><a href="https://www.iqiyi.com" target="_blank" rel="noopener">爱奇艺视频</a></li>
+      <li><span class="rank">10</span><a href="https://www.12306.cn" target="_blank" rel="noopener">铁路12306</a></li>
+    </ul>
+  </section>
+
+  <section class="section" id="comprehensive">
+    <h2>综合导航</h2>
+    <p class="section-desc">日常上网最常用的一批综合类网址入口，覆盖搜索、资讯、社区与电商。</p>
+    <div class="link-grid">
+      <a class="link-item" href="https://www.baidu.com" target="_blank" rel="noopener"><span class="name">百度</span><span class="tag">搜索</span></a>
+      <a class="link-item" href="https://www.sogou.com" target="_blank" rel="noopener"><span class="name">搜狗</span><span class="tag">搜索</span></a>
+      <a class="link-item" href="https://www.so.com" target="_blank" rel="noopener"><span class="name">360搜索</span><span class="tag">搜索</span></a>
+      <a class="link-item" href="https://cn.bing.com" target="_blank" rel="noopener"><span class="name">必应</span><span class="tag">搜索</span></a>
+      <a class="link-item" href="https://news.qq.com" target="_blank" rel="noopener"><span class="name">腾讯新闻</span><span class="tag">资讯</span></a>
+      <a class="link-item" href="https://www.sina.com.cn" target="_blank" rel="noopener"><span class="name">新浪网</span><span class="tag">资讯</span></a>
+      <a class="link-item" href="https://www.163.com" target="_blank" rel="noopener"><span class="name">网易</span><span class="tag">资讯</span></a>
+      <a class="link-item" href="https://www.zhihu.com" target="_blank" rel="noopener"><span class="name">知乎</span><span class="tag">社区</span></a>
+      <a class="link-item" href="https://tieba.baidu.com" target="_blank" rel="noopener"><span class="name">百度贴吧</span><span class="tag">社区</span></a>
+      <a class="link-item" href="https://www.douban.com" target="_blank" rel="noopener"><span class="name">豆瓣</span><span class="tag">社区</span></a>
+      <a class="link-item" href="https://www.taobao.com" target="_blank" rel="noopener"><span class="name">淘宝</span><span class="tag">购物</span></a>
+      <a class="link-item" href="https://www.jd.com" target="_blank" rel="noopener"><span class="name">京东</span><span class="tag">购物</span></a>
+      <a class="link-item" href="https://www.pinduoduo.com" target="_blank" rel="noopener"><span class="name">拼多多</span><span class="tag">购物</span></a>
+      <a class="link-item" href="https://www.1688.com" target="_blank" rel="noopener"><span class="name">1688</span><span class="tag">采购</span></a>
+      <a class="link-item" href="https://www.xianyu.com" target="_blank" rel="noopener"><span class="name">闲鱼</span><span class="tag">二手</span></a>
+      <a class="link-item" href="https://www.58.com" target="_blank" rel="noopener"><span class="name">58同城</span><span class="tag">分类</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="tools">
+    <h2>工具效率</h2>
+    <p class="section-desc">办公、翻译、云盘与效率工具类精选站点导航，工作学习都在用。</p>
+    <div class="link-grid">
+      <a class="link-item" href="https://www.wps.cn" target="_blank" rel="noopener"><span class="name">WPS办公</span><span class="tag">办公</span></a>
+      <a class="link-item" href="https://www.wjx.cn" target="_blank" rel="noopener"><span class="name">问卷星</span><span class="tag">表单</span></a>
+      <a class="link-item" href="https://www.yuque.com" target="_blank" rel="noopener"><span class="name">语雀</span><span class="tag">文档</span></a>
+      <a class="link-item" href="https://www.notion.so" target="_blank" rel="noopener"><span class="name">Notion</span><span class="tag">笔记</span></a>
+      <a class="link-item" href="https://fanyi.baidu.com" target="_blank" rel="noopener"><span class="name">百度翻译</span><span class="tag">翻译</span></a>
+      <a class="link-item" href="https://translate.google.com" target="_blank" rel="noopener"><span class="name">谷歌翻译</span><span class="tag">翻译</span></a>
+      <a class="link-item" href="https://pan.baidu.com" target="_blank" rel="noopener"><span class="name">百度网盘</span><span class="tag">云盘</span></a>
+      <a class="link-item" href="https://www.aliyundrive.com" target="_blank" rel="noopener"><span class="name">阿里云盘</span><span class="tag">云盘</span></a>
+      <a class="link-item" href="https://www.tianyancha.com" target="_blank" rel="noopener"><span class="name">天眼查</span><span class="tag">查询</span></a>
+      <a class="link-item" href="https://www.qcc.com" target="_blank" rel="noopener"><span class="name">企查查</span><span class="tag">查询</span></a>
+      <a class="link-item" href="https://www.processon.com" target="_blank" rel="noopener"><span class="name">ProcessOn</span><span class="tag">绘图</span></a>
+      <a class="link-item" href="https://www.canva.cn" target="_blank" rel="noopener"><span class="name">Canva</span><span class="tag">设计</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="life">
+    <h2>生活服务</h2>
+    <p class="section-desc">出行、缴费、外卖与政务服务入口，生活琐事一站直达。</p>
+    <div class="link-grid">
+      <a class="link-item" href="https://www.12306.cn" target="_blank" rel="noopener"><span class="name">铁路12306</span><span class="tag">出行</span></a>
+      <a class="link-item" href="https://www.dianping.com" target="_blank" rel="noopener"><span class="name">大众点评</span><span class="tag">生活</span></a>
+      <a class="link-item" href="https://www.meituan.com" target="_blank" rel="noopener"><span class="name">美团</span><span class="tag">外卖</span></a>
+      <a class="link-item" href="https://www.ele.me" target="_blank" rel="noopener"><span class="name">饿了么</span><span class="tag">外卖</span></a>
+      <a class="link-item" href="https://www.ctrip.com" target="_blank" rel="noopener"><span class="name">携程旅行</span><span class="tag">旅游</span></a>
+      <a class="link-item" href="https://www.qunar.com" target="_blank" rel="noopener"><span class="name">去哪儿</span><span class="tag">旅游</span></a>
+      <a class="link-item" href="https://www.autohome.com.cn" target="_blank" rel="noopener"><span class="name">汽车之家</span><span class="tag">汽车</span></a>
+      <a class="link-item" href="https://www.lianjia.com" target="_blank" rel="noopener"><span class="name">链家房产</span><span class="tag">房产</span></a>
+      <a class="link-item" href="https://www.anjuke.com" target="_blank" rel="noopener"><span class="name">安居客</span><span class="tag">房产</span></a>
+      <a class="link-item" href="https://www.alipay.com" target="_blank" rel="noopener"><span class="name">支付宝</span><span class="tag">支付</span></a>
+      <a class="link-item" href="https://www.12345.gov.cn" target="_blank" rel="noopener"><span class="name">政务服务</span><span class="tag">政务</span></a>
+      <a class="link-item" href="https://www.weather.com.cn" target="_blank" rel="noopener"><span class="name">天气预报</span><span class="tag">天气</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="study">
+    <h2>学习阅读</h2>
+    <p class="section-desc">公开课程、论文文献与阅读平台，适合长期收藏的学习类网址入口。</p>
+    <div class="link-grid">
+      <a class="link-item" href="https://www.icourse163.org" target="_blank" rel="noopener"><span class="name">中国大学MOOC</span><span class="tag">课程</span></a>
+      <a class="link-item" href="https://www.xuetangx.com" target="_blank" rel="noopener"><span class="name">学堂在线</span><span class="tag">课程</span></a>
+      <a class="link-item" href="https://www.cnki.net" target="_blank" rel="noopener"><span class="name">中国知网</span><span class="tag">文献</span></a>
+      <a class="link-item" href="https://www.wanfangdata.com.cn" target="_blank" rel="noopener"><span class="name">万方数据</span><span class="tag">文献</span></a>
+      <a class="link-item" href="https://www.coursera.org" target="_blank" rel="noopener"><span class="name">Coursera</span><span class="tag">课程</span></a>
+      <a class="link-item" href="https://www.deepl.com" target="_blank" rel="noopener"><span class="name">DeepL</span><span class="tag">翻译</span></a>
+      <a class="link-item" href="https://www.qidian.com" target="_blank" rel="noopener"><span class="name">起点中文网</span><span class="tag">阅读</span></a>
+      <a class="link-item" href="https://www.jjwxc.net" target="_blank" rel="noopener"><span class="name">晋江文学城</span><span class="tag">阅读</span></a>
+      <a class="link-item" href="https://www.zxcs.me" target="_blank" rel="noopener"><span class="name">知轩藏书</span><span class="tag">阅读</span></a>
+      <a class="link-item" href="https://www.duozhi.com" target="_blank" rel="noopener"><span class="name">多知网</span><span class="tag">教育</span></a>
+      <a class="link-item" href="https://developer.mozilla.org" target="_blank" rel="noopener"><span class="name">MDN文档</span><span class="tag">技术</span></a>
+      <a class="link-item" href="https://github.com" target="_blank" rel="noopener"><span class="name">GitHub</span><span class="tag">技术</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="entertainment">
+    <h2>影音娱乐</h2>
+    <p class="section-desc">长视频、短视频、音乐与游戏平台入口，休闲时间轻松直达。</p>
+    <div class="link-grid">
+      <a class="link-item" href="https://www.bilibili.com" target="_blank" rel="noopener"><span class="name">哔哩哔哩</span><span class="tag">视频</span></a>
+      <a class="link-item" href="https://www.iqiyi.com" target="_blank" rel="noopener"><span class="name">爱奇艺</span><span class="tag">视频</span></a>
+      <a class="link-item" href="https://v.qq.com" target="_blank" rel="noopener"><span class="name">腾讯视频</span><span class="tag">视频</span></a>
+      <a class="link-item" href="https://www.youku.com" target="_blank" rel="noopener"><span class="name">优酷</span><span class="tag">视频</span></a>
+      <a class="link-item" href="https://www.mgtv.com" target="_blank" rel="noopener"><span class="name">芒果TV</span><span class="tag">视频</span></a>
+      <a class="link-item" href="https://www.douyin.com" target="_blank" rel="noopener"><span class="name">抖音</span><span class="tag">短视频</span></a>
+      <a class="link-item" href="https://www.kuaishou.com" target="_blank" rel="noopener"><span class="name">快手</span><span class="tag">短视频</span></a>
+      <a class="link-item" href="https://music.163.com" target="_blank" rel="noopener"><span class="name">网易云音乐</span><span class="tag">音乐</span></a>
+      <a class="link-item" href="https://y.qq.com" target="_blank" rel="noopener"><span class="name">QQ音乐</span><span class="tag">音乐</span></a>
+      <a class="link-item" href="https://www.kuwo.cn" target="_blank" rel="noopener"><span class="name">酷我音乐</span><span class="tag">音乐</span></a>
+      <a class="link-item" href="https://www.douyu.com" target="_blank" rel="noopener"><span class="name">斗鱼直播</span><span class="tag">直播</span></a>
+      <a class="link-item" href="https://www.huya.com" target="_blank" rel="noopener"><span class="name">虎牙直播</span><span class="tag">直播</span></a>
+    </div>
+  </section>
+
+  <article class="section article" id="guide">
+    <h2>萌翻导航使用指南</h2>
+    <p class="section-desc">了解如何更高效地使用这份网址导航大全。</p>
+    <h3>一、按分类快速定位</h3>
+    <p>页面顶部提供了分类导航条，包含热门推荐、综合导航、工具效率、生活服务、学习阅读、影音娱乐六个板块。点击分类名称即可平滑滚动到对应区域，避免在长页面中反复翻找。所有分类都以卡片网格排列，鼠标悬停会高亮显示，方便确认点击目标。</p>
+    <h3>二、用搜索框直达目标</h3>
+    <p>如果你已经明确想找的内容，可以直接在顶部搜索框中输入关键词并回车，结果会在新标签页打开，不会打断当前导航页的浏览。搜索框同时支持中文与英文关键词，适合临时查资料、查天气、查票务等场景。</p>
+    <h3>三、热门推荐每日更新</h3>
+    <p>热门推荐区域按访问热度排序，收录近期使用频率最高的精选网址入口。排序会随使用情况动态变化，常来看看就能第一时间发现新的优质站点。前三位采用强调色标记，便于一眼识别。</p>
+    <h3>四、收藏与固定入口</h3>
+    <p>建议将萌翻导航设为浏览器主页或添加到书签栏，之后每次打开浏览器即可一键进入全部入口。所有外链均在新标签页打开，并已添加安全属性，减少跳转风险。若某个站点临时无法访问，可稍后重试或改用同分类下的替代站点。</p>
+    <h3>五、收录标准说明</h3>
+    <p>萌翻导航坚持宁缺毋滥的收录原则：站点需具备稳定的访问速度、清晰的内容定位与长期可用的服务能力。对于失效链接会定期清理，对于新出现的优质站点会及时补充，保证导航大全的整体质量始终维持在较高水平。</p>
+  </article>
+</main>
+
+<footer class="footer">
+  <p>萌翻导航 · 精选网址入口 · 海量导航大全 · 一键直达</p>
+  <p>本站为网址导航聚合页面，仅提供链接索引服务，页面内容由各目标站点自行提供。</p>
+  <p><a href="#hot">热门推荐</a> · <a href="#comprehensive">综合导航</a> · <a href="#tools">工具效率</a> · <a href="#life">生活服务</a> · <a href="#study">学习阅读</a> · <a href="#entertainment">影音娱乐</a></p>
+  <p>© 2026 萌翻导航 保留所有权利</p>
+</footer>
+
+<a class="back-top" href="#" id="backTop">↑</a>
+
+<script>
+(function () {
+  var backTop = document.getElementById('backTop');
+  function toggleBackTop() {
+    if (window.pageYOffset > 300) {
+      backTop.classList.add('show');
+    } else {
+      backTop.classList.remove('show');
+    }
+  }
+  window.addEventListener('scroll', toggleBackTop, { passive: true });
+  toggleBackTop();
+  backTop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  var links = document.querySelectorAll('.nav-bar a[href^="#"], .footer a[href^="#"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function (e) {
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 56;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
